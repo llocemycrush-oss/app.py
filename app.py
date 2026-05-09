@@ -567,21 +567,6 @@ body {
                 url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80") no-repeat center center fixed;
     background-size: cover;
     background-blend-mode: multiply;
-    position: relative;
-}
-
-.stApp::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 40%, rgba(255, 255, 150, 0.3) 0%, transparent 50%),
-                radial-gradient(circle at 70% 60%, rgba(255, 200, 100, 0.2) 0%, transparent 40%),
-                linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%);
-    pointer-events: none;
-    z-index: -1;
 }
 
 .block-container {
