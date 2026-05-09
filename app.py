@@ -562,11 +562,26 @@ body {
 }
 
 .stApp {
-    background: radial-gradient(circle at top, rgba(25, 40, 35, 0.86), transparent 32%),
-                linear-gradient(180deg, rgba(18, 31, 28, 0.98) 0%, rgba(15, 26, 24, 0.96) 45%, rgba(13, 20, 18, 1) 100%),
-                url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c") no-repeat center center fixed;
+    background: radial-gradient(circle at top, rgba(10, 15, 20, 0.9), transparent 35%),
+                linear-gradient(180deg, rgba(5, 10, 15, 0.95) 0%, rgba(8, 12, 18, 0.98) 50%, rgba(3, 6, 10, 1) 100%),
+                url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&q=80") no-repeat center center fixed;
     background-size: cover;
-    background-blend-mode: overlay;
+    background-blend-mode: multiply;
+    position: relative;
+}
+
+.stApp::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 40%, rgba(255, 255, 150, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 70% 60%, rgba(255, 200, 100, 0.2) 0%, transparent 40%),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.8) 100%);
+    pointer-events: none;
+    z-index: -1;
 }
 
 .block-container {
